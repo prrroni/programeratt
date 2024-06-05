@@ -1,28 +1,20 @@
-const initSlider = () => {
-	const imageList = document.querySelector(".slider-wrapper .image-list");
-	const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('[data-navbar]');
+    const navCloseBtn = document.querySelector('[data-nav-close-btn]');
+    const navLinks = document.querySelectorAll('.navbar-link');
 
-	const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
-
-
-	slideButtons.forEach(button => {
-		button.addEventListener("click", () => {
-			const director = button.id === "prev-slide" ? -1 : 1;
-			const scrollAmount = imageList.clientWidth * director;
-			imageList.scrollBy({ left: scrollAmount, behavior: "smooth"});
-		});
-	});
-
-const handleSlideButtons = () => {
-	slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "block";
-	slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft? "none" : "block"
-}
-
-
-
-    imageList.addEventListener("scroll", () => {
-         handleSlideButtons();
+    document.querySelector('.logo').addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default anchor click behavior
+        navbar.classList.toggle('open');
     });
-}
 
-window.addEventListener("load", initSlider);
+    navCloseBtn.addEventListener('click', () => {
+        navbar.classList.remove('open');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('open');
+        });
+    });
+});
