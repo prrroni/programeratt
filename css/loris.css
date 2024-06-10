@@ -55,12 +55,12 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.header {
+.ul {
   position: relative;
   z-index: 2;
 }
 
-.navbar {
+.ul {
   background: #ffffff;
   position: fixed;
   top: 0;
@@ -80,7 +80,7 @@ body {
   height:50px;
 }
 
-.navbar-link {
+.ul {
   color:#fff;
   font-size: 18px;
   font-weight: 600;
