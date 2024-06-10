@@ -111,7 +111,7 @@ body{
 }
 
 .ul ul li a:hover{
-  background-color: #D7BB4D;
+  background-color: white;
   color: #darkred;
   text-decoration-color: darkred;
   color: darkred;
@@ -128,50 +128,6 @@ form{
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
-
-        h2 {
-            color:white;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color:white;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            background-color:grey;
-            color: white;
-            border: 1px solid grey;
-            border-radius: 5px; 
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        button {
-            background-color: white;
-            color: #black;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: black;
-            color: white;
-        }
 
 ul {
   list-style: none;
