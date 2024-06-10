@@ -124,6 +124,7 @@
     color: #24262b;
     background-color: #fde6a8;
 }
+<<<<<<< HEAD
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -181,3 +182,12 @@
             background-color: black;
             color: white;
         }
+=======
+i{
+  font-size:  27px;
+  margin-top: 10px;
+}
+body {
+  background-color: #ededed;
+}
+>>>>>>> d02ec10f87f7e5a5938504861b841556bcca0714
